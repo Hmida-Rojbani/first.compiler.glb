@@ -13,6 +13,7 @@ public class App
     	String s = ReadTextAsString.readFile("C:\\Users\\TekSliver\\Desktop\\test_compiler\\test.txt");
         List<Symbole> list = AnalyseLex.analyse(s);
     	System.out.println( list.size() );
-    	System.out.println(list);
+    	//System.out.println(list);
+    	list.forEach(s1-> System.out.print(s1.getLex()+", "));
     }
 }
