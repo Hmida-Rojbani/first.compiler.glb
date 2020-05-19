@@ -19,6 +19,13 @@ public class TableAnalyse {
 		map.put(new Couple("E'","/"), Arrays.asList("/","E","E'"));
 		map.put(new Couple("E","("), Arrays.asList("(","E",")","E'"));
 		map.put(new Couple("E'",";"), Arrays.asList("eps"));
+		map.put(new Couple("E",";"), Arrays.asList("sync"));
+		map.put(new Couple("E",")"), Arrays.asList("sync"));
+		map.put(new Couple("E","+"), Arrays.asList("sync"));
+		map.put(new Couple("E","-"), Arrays.asList("sync"));
+		map.put(new Couple("E","*"), Arrays.asList("sync"));
+		map.put(new Couple("E","/"), Arrays.asList("sync"));
+		map.put(new Couple("S","$"), Arrays.asList("sync"));
 	}
 	
 	public static List<String> production (String NT, String SE) {
